@@ -2,6 +2,9 @@ class Application
 
   @@items = ["Apples","Carrots","Pears"]
 
+  # create a new class called cart
+  @@class = []
+
   def call(env)
     resp = Rack::Response.new
     req = Rack::Request.new(env)
